@@ -1,0 +1,116 @@
+.container {
+    /* border: 3px solid red; */
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+ :root {
+    --cfondoForm1: rgba(1, 88, 88, 0.39);
+    --cfondoForm2: rgba(90, 88, 85, 0.958);
+    --cnegro: black;
+    --ctexto: black;
+    --ctextoDark: rgb(1, 35, 39);
+    --cblanco: white;
+    --error: rgb(184, 31, 31);
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type="checkbox"]:checked+label::before {
+    background: var(--cnegro);
+}
+
+[type="checkbox"]:checked+label {
+    color: var(--cnegro);
+}
+
+.form {
+    /* border: 3px solid green; */
+    border-top: 3px solid var(--cnegro);
+    max-width: 400px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    background: rgb(213, 198, 198);
+    ;
+    font-size: 20px
+}
+
+.form-titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    margin-bottom: 30px;
+}
+
+.form-input label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--ctexto);
+    font-size: 20px
+}
+
+.form-input input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    border: none;
+    outline: none;
+}
+
+.form-input input:focus+label {
+    font-weight: bold;
+    color: var(--cnegro);
+}
+
+.form-termsAndConditions {
+    margin-left: 15px;
+    position: relative;
+    color: var(--ctexto);
+    font-size: 13px;
+}
+
+.form-termsAndConditions label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--cnegro);
+    position: absolute;
+    left: -14px;
+}
+
+.form-boton input {
+    background: var(--cnegro);
+    color: var(--cblanco);
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+}
+
+.mensajeError {
+    color: var(--error);
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mensajeCorrecto {
+    text-align: center;
+    font-weight: bold;
+}
